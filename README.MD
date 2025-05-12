@@ -2,7 +2,7 @@
 
 ## 🧾 Nombre del Proyecto
 
-## Restaurante Gourmet Web App
+## Kepla | Restaurant Web App
 
 ## 👨‍🍳 Descripción General
 
