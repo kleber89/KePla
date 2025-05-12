@@ -1,0 +1,53 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos | KePla Restaurant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Restaurante Gourmet</h1>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="registro.html">Reservar Menú</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="formulario">
+        <h2>Contáctanos</h2>
+        <form id="formContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensajeExito" class="formulario-nota mensaje-exito">
+            ¡Gracias por contactarnos! Hemos recibido tu mensaje.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Restaurante Gourmet</p>
+    </footer>
+
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

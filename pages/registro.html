@@ -1,0 +1,79 @@
+<!-- registro.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Menú | KePla Restaurant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="assets/img/logo.png" alt="Logo del restaurante" class="logo">
+                <span>Restaurante Gourmet</span>
+            </div>
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="registro.html">Reservar Menú</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="formulario">
+        <h2>Reserva tu Menú</h2>
+        <form id="formReserva">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc" required>
+                <option value="">Seleccionar</option>
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cédula de Extranjería</option>
+            </select>
+
+            <label for="numeroDoc">Número de Documento:</label>
+            <input type="text" id="numeroDoc" name="numeroDoc" required>
+
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="menu">Menú Seleccionado:</label>
+            <select id="menu" name="menu" required>
+                <option value="">Seleccionar</option>
+                <option value="Desayuno">Desayuno</option>
+                <option value="Almuerzo">Almuerzo</option>
+                <option value="Cena">Cena</option>
+            </select>
+
+            <label for="tipoServicio">Tipo de Servicio:</label>
+            <select id="tipoServicio" name="tipoServicio" required>
+                <option value="">Seleccionar</option>
+                <option value="Para llevar">Para llevar</option>
+                <option value="En restaurante">En restaurante</option>
+            </select>
+
+            <button type="submit">Guardar Reserva</button>
+        </form>
+
+        <p id="mensajeExito" class="mensaje-exito hidden">¡Reserva guardada exitosamente!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Restaurante Gourmet</p>
+    </footer>
+
+    <script src="../js/registro.js"></script>
+</body>
+</html>
